@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ericsson_ITSC", "Ericsson_I
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ericsson_ITSC_Library", "Ericsson_ITSC_Library\Ericsson_ITSC_Library.csproj", "{C35F6A10-6278-4397-92C1-2E4260DC787F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ericsson_ITCS_WebApi", "Ericsson_ITCS_WebApi\Ericsson_ITCS_WebApi.csproj", "{4446C561-EB68-4E11-868A-E4BA0617DB7F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -43,6 +45,14 @@ Global
 		{C35F6A10-6278-4397-92C1-2E4260DC787F}.Release|Any CPU.Build.0 = Release|Any CPU
 		{C35F6A10-6278-4397-92C1-2E4260DC787F}.Release|ARM.ActiveCfg = Release|Any CPU
 		{C35F6A10-6278-4397-92C1-2E4260DC787F}.Release|x86.ActiveCfg = Release|Any CPU
+		{4446C561-EB68-4E11-868A-E4BA0617DB7F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4446C561-EB68-4E11-868A-E4BA0617DB7F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4446C561-EB68-4E11-868A-E4BA0617DB7F}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{4446C561-EB68-4E11-868A-E4BA0617DB7F}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{4446C561-EB68-4E11-868A-E4BA0617DB7F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4446C561-EB68-4E11-868A-E4BA0617DB7F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4446C561-EB68-4E11-868A-E4BA0617DB7F}.Release|ARM.ActiveCfg = Release|Any CPU
+		{4446C561-EB68-4E11-868A-E4BA0617DB7F}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

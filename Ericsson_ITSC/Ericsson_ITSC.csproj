@@ -205,6 +205,17 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="README_FIRST.txt" />
+    <Content Include="Resources\drawable\globe_icon.png" />
+    <Content Include="Resources\drawable\globe_icon_min.png" />
+    <Content Include="Resources\drawable\icon_info.png" />
+    <Content Include="Resources\drawable\ic_action_about.png" />
+    <Content Include="Resources\drawable\ic_action_call.png" />
+    <Content Include="Resources\drawable\ic_action_group.png" />
+    <Content Include="Resources\drawable\ic_action_new_email.png" />
+    <Content Include="Resources\drawable\ic_action_person.png" />
+    <Content Include="Resources\drawable\ic_action_place.png" />
+    <Content Include="Resources\drawable\ic_action_view_as_list.png" />
+    <Content Include="Resources\drawable\ic_action_volume_on.png" />
     <Content Include="Toolkit.Content\ApplicationBar.Add.png" />
     <Content Include="Toolkit.Content\ApplicationBar.Cancel.png" />
     <Content Include="Toolkit.Content\ApplicationBar.Check.png" />

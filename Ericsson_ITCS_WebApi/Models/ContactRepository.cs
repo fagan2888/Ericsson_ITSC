@@ -12,8 +12,6 @@ namespace Ericsson_ITCS_WebApi.Models
         private int _nextId = 1;
 
 
-
-
         public ContactRepository()
         {
             Post(new Contact { Name="Sefa YILMAZ",Email="sefayilmaz91@gmail.com" ,MobilePhone="5422051534",WorkPhone="2320000000",JobTitle="Software Developer",Manager="Onder Savas", Departman="SDQ" }    );
@@ -22,12 +20,9 @@ namespace Ericsson_ITCS_WebApi.Models
             Post(new Contact { Name = "Ayse OZTURK ", Email = "ayseozturk@gmail.com", MobilePhone = "9876543210", WorkPhone = "2320000000", JobTitle = "Consultant", Manager = "Onder Savas", Departman = "SDQ" });
             Post(new Contact { Name = "Sınem KIR ", Email = "sinemkır@gmail.com", MobilePhone = "1112223330", WorkPhone = "2320000000", JobTitle = "DBA", Manager = "Onder Savas", Departman = "SDQ" });
         }
+   
 
-
-
-
-
-
+        #region Methods
         public IEnumerable<Contact> GetAll()
         {
             return contacts;
@@ -78,6 +73,8 @@ namespace Ericsson_ITCS_WebApi.Models
         {
             contacts.RemoveAll(p => p.ContactId == id);
         }
+
+        #endregion
     }
 
 }

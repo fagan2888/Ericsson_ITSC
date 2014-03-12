@@ -2,11 +2,11 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
-//using Ericsson_ITCS_WebApi.Models;
+using Ericsson_ITSC_Library;
 
 namespace Ericsson_ITCS_WebApi.Models
 {
-    public class AnnouncementRepository
+    public class AnnouncementRepository:IAnnouncementRepository
     {
         private List<Announcement> announcements = new List<Announcement>();
         private int _nextId = 1;
@@ -22,7 +22,7 @@ namespace Ericsson_ITCS_WebApi.Models
 
         }
 
-
+        
 
 
         public IEnumerable<Announcement> GetAll()

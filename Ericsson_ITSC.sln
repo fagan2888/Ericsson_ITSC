@@ -1,7 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ericsson_ITSC", "Ericsson_ITSC\Ericsson_ITSC.csproj", "{F318ABCB-E63D-4EEE-BF0C-8A785ADC5533}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ericsson_ITSC_Library", "Ericsson_ITSC_Library\Ericsson_ITSC_Library.csproj", "{C35F6A10-6278-4397-92C1-2E4260DC787F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -31,6 +35,14 @@ Global
 		{F318ABCB-E63D-4EEE-BF0C-8A785ADC5533}.Release|x86.ActiveCfg = Release|x86
 		{F318ABCB-E63D-4EEE-BF0C-8A785ADC5533}.Release|x86.Build.0 = Release|x86
 		{F318ABCB-E63D-4EEE-BF0C-8A785ADC5533}.Release|x86.Deploy.0 = Release|x86
+		{C35F6A10-6278-4397-92C1-2E4260DC787F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C35F6A10-6278-4397-92C1-2E4260DC787F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C35F6A10-6278-4397-92C1-2E4260DC787F}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{C35F6A10-6278-4397-92C1-2E4260DC787F}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{C35F6A10-6278-4397-92C1-2E4260DC787F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C35F6A10-6278-4397-92C1-2E4260DC787F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C35F6A10-6278-4397-92C1-2E4260DC787F}.Release|ARM.ActiveCfg = Release|Any CPU
+		{C35F6A10-6278-4397-92C1-2E4260DC787F}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

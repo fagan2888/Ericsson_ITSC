@@ -22,8 +22,8 @@ namespace Ericsson_ITCS_WebApi.Models
 
         }
 
+        #region Methods
         
-
 
         public IEnumerable<Announcement> GetAll()
         {
@@ -39,7 +39,7 @@ namespace Ericsson_ITCS_WebApi.Models
         {
             if (newAnnouncement == null)
             {
-                throw new ArgumentNullException("Ops ! Contact object is null that was sended !");
+                throw new ArgumentNullException("Ops ! Announcement object is null that was sended !");
             }
             newAnnouncement.id = _nextId++;
             announcements.Add(newAnnouncement);
@@ -70,5 +70,7 @@ namespace Ericsson_ITCS_WebApi.Models
         {
             announcements.RemoveAll(p => p.id == id);
         }
+
+        #endregion
     }
 }

@@ -13,6 +13,8 @@ namespace Ericsson_ITCS_WebApi.Controllers
     {
         static readonly IAnnouncementRepository  repository = new AnnouncementRepository();
 
+        #region Methods
+        
         public IEnumerable<Announcement> GetAllAnnouncement()
         {
             return repository.GetAll();
@@ -23,7 +25,7 @@ namespace Ericsson_ITCS_WebApi.Controllers
             Announcement item = repository.Get(id);
             if (item == null)
             {
-                throw new HttpResponseException(HttpStatusCode.NotFound);
+                throw new ArgumentNullException("Ops ! There is no announcement with id #" + id + "  !");
             }
             return item;
         }
@@ -38,7 +40,7 @@ namespace Ericsson_ITCS_WebApi.Controllers
             announcement.id = id;
             if (!repository.Update(announcement))
             {
-                throw new ArgumentNullException("Ops ! Announcement object is null that was sended !");
+                throw new ArgumentNullException("Opps ! There is no announcement with id #" + id + "  !");
             }
         }
 
@@ -47,9 +49,10 @@ namespace Ericsson_ITCS_WebApi.Controllers
             Announcement item = repository.Get(id);
             if (item == null)
             {
-                throw new ArgumentNullException("Ops ! There is no announcement with " + id + "  !");
+                throw new ArgumentNullException("Opps ! There is no announcement with id #" + id + "  !");
             }
         }
+        #endregion
 
     }
 }

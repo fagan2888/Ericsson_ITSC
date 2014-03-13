@@ -37,7 +37,7 @@ namespace Ericsson_ITCS_WebApi.Models
         {
             if (newContact == null)
             {
-                throw new ArgumentNullException("Ops ! Contact object is null that was sended !");
+                throw new ArgumentNullException("Opps ! Contact object is null that was sended !");
             }
             newContact.ContactId= _nextId++;
             contacts.Add(newContact);
@@ -48,12 +48,12 @@ namespace Ericsson_ITCS_WebApi.Models
         {
             if (updatedContact == null)
             {
-                throw new ArgumentNullException("Ops ! Contact object is null that was sended !");
+                throw new ArgumentNullException("Opps ! Contact object is null that was sended !");
             }
             else
             {
                 var contact = this.Get(updatedContact.ContactId);
-                if (contact.ContactId == -1)
+                if (contact.ContactId == -1)                            // there is no contact object with that id
                 {
                     return false;
                 }

@@ -12,7 +12,9 @@ namespace Ericsson_ITCS_WebApi.Controllers
     public class ContacsController : ApiController
     {
         static readonly IContactRepository repository = new ContactRepository();
-        
+
+        #region Methods
+
         public IEnumerable<Contact> GetAllContacts()
         {
             return repository.GetAll();
@@ -23,7 +25,7 @@ namespace Ericsson_ITCS_WebApi.Controllers
             Contact item = repository.Get(id);
             if (item == null)
             {
-                throw new HttpResponseException(HttpStatusCode.NotFound);
+                throw new ArgumentNullException("Ops ! There is no Contact with id #" + id + "  !");
             }
             return item;
         }
@@ -47,10 +49,10 @@ namespace Ericsson_ITCS_WebApi.Controllers
             Contact item = repository.Get(id);
             if (item==null)
             {
-                throw new ArgumentNullException("Ops ! There is no contact with "+id+"  !" ); 
+                throw new ArgumentNullException("Ops ! There is no contact with id #"+id+"  !" ); 
             }
         }
 
-
+        #endregion
     }
 }

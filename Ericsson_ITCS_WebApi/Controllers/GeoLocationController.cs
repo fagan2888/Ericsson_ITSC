@@ -13,6 +13,8 @@ namespace Ericsson_ITCS_WebApi.Controllers
     {
         static readonly IGeoLocationRepository repository = new GeoLocationRepository();
 
+        #region Methods
+
         public IEnumerable<GeoLocation> GetAllGeoLocation()
         {
             return repository.GetAll();
@@ -51,5 +53,6 @@ namespace Ericsson_ITCS_WebApi.Controllers
             }
         }
 
+        #endregion
     }
 }

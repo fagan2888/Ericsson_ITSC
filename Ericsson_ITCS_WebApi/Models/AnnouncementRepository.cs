@@ -39,7 +39,7 @@ namespace Ericsson_ITCS_WebApi.Models
         {
             if (newAnnouncement == null)
             {
-                throw new ArgumentNullException("Ops ! Announcement object is null that was sended !");
+                throw new ArgumentNullException("Opps ! Announcement object is null that was sended !");
             }
             newAnnouncement.id = _nextId++;
             announcements.Add(newAnnouncement);
@@ -50,7 +50,7 @@ namespace Ericsson_ITCS_WebApi.Models
         {
             if (updatedAnnouncement == null)
             {
-                throw new ArgumentNullException("Ops ! Announcement object is null that was sended !");
+                throw new ArgumentNullException("Opps ! Announcement object is null that was sended !");
             }
             else
             {

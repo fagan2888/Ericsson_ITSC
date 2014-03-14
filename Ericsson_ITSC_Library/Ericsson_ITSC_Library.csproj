@@ -38,6 +38,7 @@
   <ItemGroup>
     <Compile Include="Announcement.cs" />
     <Compile Include="Contact.cs" />
+    <Compile Include="Emergency.cs" />
     <Compile Include="GeoLocation.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

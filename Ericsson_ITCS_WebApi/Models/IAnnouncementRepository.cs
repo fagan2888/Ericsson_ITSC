@@ -11,8 +11,8 @@ namespace Ericsson_ITCS_WebApi.Models
     {
         IEnumerable<Announcement> GetAll();
         Announcement Get(int id);
-        void Post(Announcement contact);
-        bool Update(Announcement updatedContact);
+        void Post(Announcement announcement);
+        bool Update(Announcement updatedAnnouncement);
         void Delete(int id);
     }
 }

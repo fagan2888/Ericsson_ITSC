@@ -6,10 +6,9 @@ using System.Threading.Tasks;
 
 namespace Ericsson_ITSC_Library
 {
-    public class Announcement
+    public class Emergency
     {
-        public int id { get; set; }
-        public string Title { get; set; }
-        public string Content { get; set; }
+        public string Name { get; set; }
+        public string Number { get; set; }
     }
 }

@@ -13,11 +13,11 @@ namespace Ericsson_ITCS_WebApi.Models
 
         public GeoLocationRepository()
         {
-            Post(new GeoLocation { Name = "Sefa Yılmaz EV ", Latitude = 38.466778, Longitude = 27.214870 });
-            Post(new GeoLocation { Name = "Bornova Hükümet Konağı ", Latitude = 38.466778, Longitude = 27.214870 } );
-            Post(new GeoLocation { Name = "İzmir Saat Kulesi ", Latitude = 38.466778, Longitude = 27.214870 } );
-            Post(new GeoLocation { Name = "Ege Üniversitesi Bilgisayar Mühendisliği ", Latitude = 38.466778, Longitude = 27.214870 } );
-            Post(new GeoLocation { Name = "Konak Atatürk Kültür Merkezi ", Latitude = 38.466778, Longitude = 27.214870 });
+            Post(new GeoLocation { Name = "Home EV ", Latitude = 38.466778, Longitude = 27.214870 });
+            Post(new GeoLocation { Name = "Bornova Hükümet Konağı ", Latitude = 38.466722, Longitude = 27.219776 });
+            Post(new GeoLocation { Name = "İzmir Saat Kulesi ", Latitude = 38.419131, Longitude = 27.128743 });
+            Post(new GeoLocation { Name = "Ege Üniversitesi Bilgisayar Mühendisliği ", Latitude = 38.458015, Longitude = 27.213699 });
+            Post(new GeoLocation { Name = "Konak Atatürk Kültür Merkezi ", Latitude = 38.426494, Longitude = 27.136199 });
         }
 
 
@@ -52,7 +52,7 @@ namespace Ericsson_ITCS_WebApi.Models
             else
             {
                 var geoLocation = this.GetByName(updatedGeoLocation.Name);
-                if (geoLocation.Name == null)
+                if (geoLocation.Name == "")
                 {
                     return false;
                 }

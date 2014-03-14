@@ -16,26 +16,23 @@ namespace Ericsson_ITSC
 {
     public partial class People : PhoneApplicationPage
     {
-        List<Contacts> contacts = new List<Contacts>();
+        List<Contact> contacts = new List<Contact>();
         public People()
         {
             InitializeComponent();
 
-            
-            contacts.Add(new Contacts() { FirstName = "First", LastName = "Last", CellPhone = "05550003322", JobTitle = "Developer" });
-            contacts.Add(new Contacts() { FirstName = "First 1", LastName = "Last", CellPhone = "05550003322", JobTitle = "Developer" });
-            contacts.Add(new Contacts() { FirstName = "First 2", LastName = "Last", CellPhone = "05550003322", JobTitle = "Developer" });
-            contacts.Add(new Contacts() { FirstName = "First 3", LastName = "Last", CellPhone = "05550003322", JobTitle = "Developer" });
-            contacts.Add(new Contacts() { FirstName = "First 4", LastName = "Last", CellPhone = "05550003322", JobTitle = "Developer" });
-            contacts.Add(new Contacts() { FirstName = "First 5", LastName = "Last", CellPhone = "05550003322", JobTitle = "Developer" });
 
+            contacts.Add(new Contact() { ContactId=1, Name="Sefa Yılmaz", Email="sefayilmaz91@gmail.com", MobilePhone="5422051534",JobTitle="Software Developer",Manager="Onder Savas", Departman="SDQ"});
+            contacts.Add(new Contact() { ContactId=2, Name="Halil Burak Cetinkaya", Email="hburak.cetinkaya@gmail.com", MobilePhone="5077155025",JobTitle="Software Developer",Manager="Onder Savas", Departman="SDQ"});
+            contacts.Add(new Contact() { ContactId=3, Name="Ali KAYA", Email="alikaya@gmail.com", MobilePhone="1234567890",JobTitle="Software Developer",Manager="Onder Savas", Departman="SDQ"});
+            contacts.Add(new Contact() { ContactId = 4, Name = "Wesley Sneijder", Email = "wesley.sneijder@outlook.com", MobilePhone = "05305303030", JobTitle = "Midfielder", Departman = "Midfield", Manager = "Onder Savas", WorkPhone = "" });
             ContactList.ItemsSource = contacts;
         }
 
         private void TextBox_KeyUp(object sender, System.Windows.Input.KeyEventArgs e)
         {
             var search = ((TextBox)sender).Text;
-            var result = contacts.FindAll(i => i.FirstName.Contains(search) || i.LastName.Contains(search));
+            var result = contacts.FindAll(i => i.Name.Contains(search));
 
             ContactList.ItemsSource = result;
         }
@@ -43,21 +40,21 @@ namespace Ericsson_ITSC
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             var button = ((Button)sender);
-            var contact = (Contacts)button.CommandParameter;
+            var contact = (Contact)button.CommandParameter;
 
             PhoneCallTask arama = new PhoneCallTask();
 
-            arama.DisplayName = contact.FirstName + " " + contact.LastName;
-            arama.PhoneNumber = contact.CellPhone;
+            arama.DisplayName = contact.Name;
+            arama.PhoneNumber = contact.MobilePhone;
             arama.Show();
         }
 
         private void ContactDetail_Click(object sender, RoutedEventArgs e)
         {
             var button = ((Button)sender);
-            var contact = (Contacts)button.CommandParameter;
+            var contact = (Contact)button.CommandParameter;
 
-
+            PeopleDetails.contact = contact;
             NavigationService.Navigate(new Uri("/PeopleDetails.xaml", UriKind.Relative));
         }
 

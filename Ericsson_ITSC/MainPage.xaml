@@ -41,17 +41,96 @@
 
         <!--TitlePanel contains the name of the application and page title-->
         <StackPanel x:Name="TitlePanel" Grid.Row="0" Margin="12,17,0,28">
-            <TextBlock Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}" Height="71" Text="Ericsson IT Service Center  " FontSize="36"/>
+            <TextBlock Margin="9,-7,0,0" Style="{StaticResource PhoneTextHugeStyle}" Height="60" Text="Ericsson" FontSize="36"/>
+            <TextBlock Style="{StaticResource PhoneTextHugeStyle}" Height="60" Text="IT Service Center" FontSize="36"/>
+            <!--<Image Source="/Resources/drawable/globe_icon.png"/>-->
         </StackPanel>
 
         <!--ContentPanel - place additional content here-->
         <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
-            <Button x:Name="btnToDo" Content="To-Do List" HorizontalAlignment="Left" Margin="30,192,0,0" VerticalAlignment="Top" Width="397" Click="btnToDo_Click"/>
-            <Button x:Name="btnEmergency" Content="Emergency" HorizontalAlignment="Left" Margin="30,264,0,0" VerticalAlignment="Top" Width="397" Click="btnEmergency_Click"/>
-            <Button x:Name="btnLocations" Content="Office Locations" HorizontalAlignment="Left" Margin="30,336,0,0" VerticalAlignment="Top" Width="397" Click="btnLocations_Click"/>
-            <Button x:Name="btnAnno" Content="Announcements" HorizontalAlignment="Left" Margin="30,125,0,0" VerticalAlignment="Top" Width="397" Click="btnAnno_Click"/>
-            <Button x:Name="btnPeople" Content="People" HorizontalAlignment="Left" Margin="30,48,0,0" VerticalAlignment="Top" Width="397" Click="btnPeople_Click"/>
+            <StackPanel Margin="60,0">
+                <Button Click="btnPeople_Click">
+                    <Button.Template>
+                        <ControlTemplate>
+                            <StackPanel Orientation="Horizontal">
+                                <Image Source="/Resources/drawable/ic_action_group.png" Width="80" Margin="0,0,24,0"/>
+                                <TextBlock Text="People" VerticalAlignment="Center" />
+                            </StackPanel>
+                        </ControlTemplate>
+                    </Button.Template>              
+                </Button>
+                <Button Click="btnAnno_Click">
+                    <Button.Template>
+                        <ControlTemplate>
+                            <StackPanel Orientation="Horizontal">
+                                <Image Source="/Resources/drawable/ic_action_volume_on.png" Width="80" Margin="0,0,24,0"/>
+                                <TextBlock Text="Announcements" VerticalAlignment="Center" />
+                            </StackPanel>
+                        </ControlTemplate>
+                    </Button.Template>
+                </Button>
+                <Button Click="btnToDo_Click">
+                    <Button.Template>
+                        <ControlTemplate>
+                            <StackPanel Orientation="Horizontal">
+                                <Image Source="/Resources/drawable/ic_action_view_as_list.png" Width="80" Margin="0,0,24,0"/>
+                                <TextBlock Text="To-Do List" VerticalAlignment="Center" />
+                            </StackPanel>
+                        </ControlTemplate>
+                    </Button.Template>
+                </Button>
+                <Button Click="btnEmergency_Click">
+                    <Button.Template>
+                        <ControlTemplate>
+                            <StackPanel Orientation="Horizontal">
+                                <Image Source="/Resources/drawable/ic_action_about.png" Width="80" Margin="0,0,24,0"/>
+                                <TextBlock Text="Emergency" VerticalAlignment="Center" />
+                            </StackPanel>
+                        </ControlTemplate>
+                    </Button.Template>
+                </Button>
+                <Button Click="btnLocations_Click">
+                    <Button.Template>
+                        <ControlTemplate>
+                            <StackPanel Orientation="Horizontal">
+                                <Image Source="/Resources/drawable/ic_action_place.png" Width="80" Margin="0,0,24,0"/>
+                                <TextBlock Text="Office Locations" VerticalAlignment="Center" />
+                            </StackPanel>
+                        </ControlTemplate>
+                    </Button.Template>
+                </Button>
+                
+                <!--CLOSE Button was here-->
+                <!--<Button Click="btnExit_Click">
+                    <Button.Template>
+                        <ControlTemplate>
+                            <StackPanel Orientation="Horizontal">
+                                <Image Source="/Resources/drawable/ic_action_group.png" Width="80" Margin="0,0,24,0"/>
+                                <TextBlock Text="Close" VerticalAlignment="Center" />
+                            </StackPanel>
+                        </ControlTemplate>
+                    </Button.Template>
+                </Button>-->
+            </StackPanel>
+            <!--<Button x:Name="btnToDo" Content="To-Do List" HorizontalAlignment="Left" Margin="132,192,0,0" VerticalAlignment="Top" Width="295" Click="btnToDo_Click" BorderThickness="0"/>
+            <Button x:Name="btnEmergency" Content="Emergency" HorizontalAlignment="Left" Margin="132,269,0,0" VerticalAlignment="Top" Width="295" Click="btnEmergency_Click" BorderThickness="0"/>
+            <Button x:Name="btnLocations" Content="Office Locations" HorizontalAlignment="Left" Margin="132,331,0,0" VerticalAlignment="Top" Width="295" Click="btnLocations_Click" BorderThickness="0"/>
+            <Button x:Name="btnAnno" Content="Announcements" HorizontalAlignment="Left" Margin="132,119,0,0" VerticalAlignment="Top" Width="295" Click="btnAnno_Click" BorderThickness="0"/>
+
+            <Button x:Name="btnPeople" Content="People" HorizontalAlignment="Left" Margin="116,48,0,0" VerticalAlignment="Top" Width="311" Click="btnPeople_Click" BorderThickness="0">
+            </Button>
+
             <Button x:Name="btnExit" Content="Exit" HorizontalAlignment="Left" Margin="30,493,0,0" VerticalAlignment="Top" Width="92" Click="btnExit_Click"/>
+            <Grid HorizontalAlignment="Left" Height="39" Margin="30,62,0,0" VerticalAlignment="Top" Width="81" RenderTransformOrigin="-0.075,0.025">
+                <Image Source="/Resources/drawable/ic_action_group.png" Margin="36,-13,-43,-15" RenderTransformOrigin="0.369,0.472"/>
+                <Image Source="/Resources/drawable/ic_action_volume_on.png" Margin="36,59,-43,-82"/>
+            </Grid>
+            <Image Source="/Resources/drawable/ic_action_view_as_list.png" Margin="63,196,305,401"/>
+            <Image Source="/Resources/drawable/icon_info.png" Margin="63,278,305,328"/>
+            <Image Source="/Resources/drawable/ic_action_place.png" Margin="63,336,305,270"/>
+            <Image Source="/Resources/drawable/globe_icon.png" Margin="390,-97,-22,703" RenderTransformOrigin="4.716,-0.594"/>-->
+
+
         </Grid>
 
         <!--Uncomment to see an alignment grid to help ensure your controls are

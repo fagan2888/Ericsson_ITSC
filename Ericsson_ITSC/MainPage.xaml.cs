@@ -27,7 +27,7 @@ namespace Ericsson_ITSC
 
         private void btnEmergency_Click(object sender, RoutedEventArgs e)
         {
-            NavigationService.Navigate(new Uri("/Emergency.xaml", UriKind.Relative));
+            NavigationService.Navigate(new Uri("/Emergency_Page.xaml", UriKind.Relative));
         }
 
         private void btnToDo_Click(object sender, RoutedEventArgs e)
@@ -37,7 +37,7 @@ namespace Ericsson_ITSC
 
         private void btnAnno_Click(object sender, RoutedEventArgs e)
         {
-            NavigationService.Navigate(new Uri("/Announcements.xaml", UriKind.Relative));
+            NavigationService.Navigate(new Uri("/Announcements_Page.xaml", UriKind.Relative));
         }
 
         private void btnPeople_Click(object sender, RoutedEventArgs e)

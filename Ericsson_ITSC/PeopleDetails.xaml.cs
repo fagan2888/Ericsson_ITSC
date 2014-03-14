@@ -8,15 +8,18 @@ using System.Windows.Navigation;
 using Microsoft.Phone.Controls;
 using Microsoft.Phone.Shell;
 using Ericsson_ITSC_Library;
+using Ericsson_ITSC;
 
 namespace Ericsson_ITSC
 {
     public partial class PeopleDetails : PhoneApplicationPage
     {
-        public static Contacts 
+        public static Contact contact;
         public PeopleDetails()
         {
             InitializeComponent();
+
+            DataContext = contact;
         }
     }
 }

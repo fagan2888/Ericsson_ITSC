@@ -90,14 +90,14 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Announcements.xaml.cs">
-      <DependentUpon>Announcements.xaml</DependentUpon>
+    <Compile Include="Announcements_Page.xaml.cs">
+      <DependentUpon>Announcements_Page.xaml</DependentUpon>
     </Compile>
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Emergency.xaml.cs">
-      <DependentUpon>Emergency.xaml</DependentUpon>
+    <Compile Include="Emergency_Page.xaml.cs">
+      <DependentUpon>Emergency_Page.xaml</DependentUpon>
     </Compile>
     <Compile Include="LocalizedStrings.cs" />
     <Compile Include="MainPage.xaml.cs">
@@ -132,11 +132,11 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </ApplicationDefinition>
-    <Page Include="Announcements.xaml">
+    <Page Include="Announcements_Page.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Emergency.xaml">
+    <Page Include="Emergency_Page.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

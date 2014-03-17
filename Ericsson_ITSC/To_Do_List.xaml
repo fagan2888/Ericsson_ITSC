@@ -63,7 +63,7 @@
         <StackPanel x:Name="TitlePanel" Grid.Row="0" Margin="12,17,0,28">
             <TextBlock 
                 x:Name="ApplicationTitle" 
-                Text="LOCAL DATABASE EXAMPLE: TO-DO LIST" 
+                Text="ERICSSON ITSC: TO-DO LIST" 
                 Style="{StaticResource PhoneTextNormalStyle}"/>
         </StackPanel>
 
